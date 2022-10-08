@@ -2,13 +2,18 @@
 /**
  * That markdown on the left doesn't look great. Let's render it.
  */
-
-#work-text.flipped {
-  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+#work-container {
+  border: 1px solid #fff;
+  border-top-width: 12px;
+  border-image: linear-gradient(to right, rgb(39, 222, 180), rgb(42, 242, 114)) 10 10;
 }
 
-#work-text .md {
-  -webkit-transform: rotateY(190deg) rotateZ(180deg);
+#work-container.flipped {
+  -webkit-transform: translateX(calc(98vw - 100%)) rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+}
+
+#work-container .md {
+  -webkit-transform: translateX(calc(98vw - 100%)) rotateY(190deg) rotateZ(180deg);
   margin-top: 800px;
 }
 

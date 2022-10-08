@@ -24,7 +24,7 @@
  */
 
 html {
-  background: rgb(63, 82, 99);
+  background: rgb(29, 29, 29);
 }
 
 /***
@@ -45,17 +45,14 @@ pre, a {
 
 pre:not(:empty) {
   overflow: auto;
-  background: rgb(48, 48, 48);
-  border: 1px solid #ccc;
-  max-height: 45vh;
-  width: 49%;
+  background: rgb(1, 0, 24);
+  max-height: 42vh;
   font-size: 14px;
   font-family: monospace;
   padding: 1vh 0.5vw;
   box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
   white-space: pre-wrap;
   outline: 0;
-  margin: 1vh 0.5vw;
 }
 
 /**
@@ -64,8 +61,11 @@ pre:not(:empty) {
  */
 
 #style-text {
-  -webkit-transform: translateX(95%);
+  width: 20%;
   position: absolute;
+  border: 1px solid #fff;
+  border-top-width: 12px;
+  border-image: linear-gradient(to right, rgb(39, 222, 180), rgb(42, 242, 114)) 10 10;
 }
 
 /**
@@ -90,17 +90,45 @@ body {
 }
 
 #style-text {
-  -webkit-transform: translateX(98.5%) rotateY(-10deg);
-  -webkit-transform-origin: right;
   max-height: 93.1vh;
+  margin: 1vh 0.5vw;
+}
+
+#scene {
+  width: 56%;
+  -webkit-transform: translateX(21vw);
+  -webkit-transform-origin: center;
+  display: inline-block;
+  margin: 1vh 0.5vw;
 }
 
 /**
  * So, let's talk projects. That's why you're here, right?
  * I can't imagine you'd come just to see the pretty colors.
  */
+#work-container {
+  width: 20%;
+  height: 45vh;
+  -webkit-transform: translateX(calc(98vw - 100%));
+  -webkit-transform-origin: center;
+  margin: 1vh 0.5vw;
+}
 
-pre:not(#style-text) {
-  -webkit-transform: rotateY(10deg);
-  -webkit-transform-origin: left;
+#work-container pre{
+  padding-top:61px;
+  margin: 0;
+}
+
+#pgp-container {
+  width: 20%;
+  height: 45vh;
+  -webkit-transform: translateX(calc(98vw - 100%)) translateY(2vh);
+  -webkit-transform-origin: center;
+  margin: 1vh 0.5vw;
+  position: absolute;
+}
+
+#pgp-container pre{
+  padding-top:61px;
+  margin: 0;
 }
